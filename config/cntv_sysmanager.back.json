@@ -1,0 +1,52 @@
+{
+	"#common": "配置文件",
+	"name" : "cntv_sysmanager",
+	"app": {
+	    "version_type": 2,
+		"yii_debug": true,
+		"dbtype": "mysql",
+		"mysql": {
+			"host": "192.168.1.118",
+			"port": 3306,
+			"database": "sys_manager",
+			"username": "clicki",
+			"password": "3281344c86"
+		},
+		"mysql_read": {
+			"host": "192.168.1.118",
+			"port": 3306,
+			"database": "sys_manager",
+			"username": "clicki",
+			"password": "3281344c86"
+		},
+		"mysql_cntv_uc": {
+			"host": "192.168.1.118",
+			"port": 3306,
+			"database": "cntv_uc",
+			"username": "clicki",
+			"password": "3281344c86"
+		},
+		"memcache": {
+			"host": "192.168.1.118",
+			"port": 11211
+		},
+		"mongodb": {
+			"host": "192.168.1.118",
+			"port": "27017",
+			"db_name": "cntv"
+		}
+	},
+	"module_log" : {
+		"host" : "192.168.1.118",
+		"port" : "1463"
+	},
+	"algorithm_server" : {
+		"video" : "192.168.1.118:8001,192.168.1.118:8001",
+		"weibo_user" : "192.168.1.118:8001,192.168.1.118:8001",
+		"weibo_content" : "192.168.1.118:8001,192.168.1.118:8001"
+	},
+	"algorithm_time_out" : 300,
+	"api_server" : "http://192.168.1.118:82/index.php",
+	"manual_recomm" : 1800000,
+	"vms_server": "http://192.168.1.73/index.php"
+}

@@ -1,0 +1,130 @@
+//主标题下指标切换按钮
+//-------------------------------------------
+.indicator{
+  margin: 0 5px 0;
+  position: relative;
+  float: left;
+  display: inline;
+
+  .act {
+    background: #848484;
+    border: 1px solid #848484;
+    height: 30px;
+    border-bottom: none;
+    margin: -1px -1px -3px;
+    cursor: default;
+    color: @white;
+  }
+
+  .customSetIcon {
+    .size(7px, 5px);
+    border: 0!important;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-top: 2px;
+    background: url(images/indicatorArr.png) no-repeat scroll 5px 0 transparent;
+    _background: url(images/indicatorArr.gif) no-repeat;
+  }
+
+  .actIcon {
+    background-position: 5px -7px;
+  }
+
+  ul {
+    height: 29px;
+    float: right;
+    background: #F6F6F6;
+    border: 1px solid #CACDCC;
+    border-bottom: none;
+
+    li {
+      float: left;
+      display: inline;
+      padding: 0 20px;
+      height: 29px;
+      line-height: 29px;
+      color: @black;
+      cursor: pointer;
+    }
+  }
+}
+
+//自定义状态
+//-------------------------------------------
+.theGridPopFilter {
+  position:absolute;
+  top:0;
+  left:330px;
+  border:1px solid #a7a7a7;
+  background:@white;
+  display:none;
+  z-index:14;
+  padding:10px 16px 15px;
+
+  ul {
+    overflow:hidden;
+
+    li {
+      float:left;
+      margin:0 9px;
+      padding:0 0 8px;
+
+      span {
+        display:block!important;
+        color:#646464;
+        text-align:left!important;
+        margin:3px 0;
+
+        label {
+          margin:0 0 0 14px;
+        }
+      }
+
+      strong {
+        font-weight:400;
+        color:#0e0e0e;
+        display:block;
+        margin:0 0 8px;
+      }
+    }
+  }
+
+  .cancleGridFilter,.doGridFilter{
+    width:57px;
+    height:27px;
+    overflow:hidden;
+    line-height:999em;
+    border:none;
+    background-image:url(images/gridFilterBnts.gif);
+    background-repeat:no-repeat;
+    background-color:transparent;
+  }
+
+  .cancleGridFilter {
+    background-position:-16px -7px;
+    &:hover { background-position:-16px -44px; }
+  }
+
+  .doGridFilter {
+    background-position:-87px -7px;
+    margin:0 5px 0 0;
+    &:hover { background-position:-87px -44px; }
+  }
+
+  .Ex_theAFListCtrler {
+    overflow: hidden;
+    zoom: 1;
+    border-top: 1px dotted #CDCDCD;
+    text-align: right;
+    padding: 10px 0 0 10px;
+
+    div {
+      float: left;
+      display: inline;
+
+      label {
+        margin: 0 8px 0 4px;
+      }
+    }
+  }
+}

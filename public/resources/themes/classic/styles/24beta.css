@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+body {background:#FFFFFF;}
+.left-loading {background:url('../images/loading.gif') no-repeat; padding-left:20px;}
+.right-loading {background:url('../images/loading.gif') no-repeat; padding-right:20px;}
+
+#header .extra {margin-top:5px; text-align:right; line-height:22px; width:200px; overflow:hidden;}
+#header .cdc-top {margin-right:10px;}
+#header .rss {padding-left:20px; background:url(../images/feed.gif) no-repeat;}
+
+#footer {margin:10px auto;}
+
+.pages {margin:5px; line-height:20px;}
+.pages ul.yiiPager { font-size:12px;}
+.external-left {padding-left:13px; background:url(../images/external.png) no-repeat scroll left center}
+.external-right {margin-right:3px; padding-right:13px; background:url(../images/external.png) no-repeat scroll right center}
+.arrow-left {padding-left:18px; background:url(../images/arrow_left.png) no-repeat scroll left center}
+.arrow-right {padding-right:18px; background:url(../images/arrow_right.png) no-repeat scroll right center}
+.comment-nums {padding-right:18px; background:url(../images/comments.png) no-repeat scroll right center}
+.icon-media {background:url(../images/icons1.png) no-repeat; width:14px; height:14px;} 
+.icon-pic {background-position:-160px 0px;}
+.icon-audio {background-position:-200px 0px;}
+.icon-video {background-position:-100px -40px;}
+
+/* new icon */
+.relative {position:relative;}
+.pop-tips {background:url(../images/floattips.gif) no-repeat scroll; font-size:0px; width:19px; height:23px; position:absolute; line-height:0px; overflow:hidden; text-indent:-10000px; top:-10px; z-index:99px;}
+.pop-new {background-position:-19px 0;}
+
+/* site/index */
+.subscribe {padding:5px 3px;}
+.subscribe img {margin:0px 0px 3px 3px;}
+
+/* post/show */
+.post-detail {padding:10px 10px 0px 10px; line-height:24px; font-size:14px;}
+.post-detail .article-content {margin:10px auto;}
+.post-detail .article-content p {margin:10px 0px;}
+.post-detail .content-pic, .list .summary .content-pic {clear:both; border:1px solid #BFBFBF; padding:3px; width:expression(this.width > 570 ? "570px" : "auto"); max-width:570px; -moz-border-radius:4px;}
+.post-detail .article-content ul, .article-detail .article-content li {text-indent:20px; list-style:disc inside;}
+.post-detail .cdc {margin:10px auto;}
+.post-detail .topic-icon {float:right;}
+.post-detail blockquote {border:1px dashed #BCBCBC; margin:5px 10px; padding:5px 10px;}
+.original-copyright {padding:0px 10px; line-height:24px;}
+
+/* share */
+img.icons {width:24px; height:24px; background:url(../images/icons.png);}
+img.qqtwitter {background-position:-37px -58px;}
+img.douban {background-position:-37px -203px;}
+img.renren {background-position:-37px -116px;}
+img.qzone {background-position:-37px -174px;}
+img.google {background-position:-37px -348px;}
+img.xianguo {background-position:-37px -551px;}
+img.netease {background-position:-37px -87px;}
+img.baidu {background-position:-37px -377px;}
+img.kaixin001 {background-position:-37px -145px;}
+img.sinat {background-position:-37px -580px;}
+
+
+/* rating */
+.rating {margin:10px;}
+.mark-num li, .mark1 li, .mark2 li {width:30px; float:left; text-align:center;}
+.mark1 li a, .mark2 li a {display:block; height:30px; width:30px; text-align:center; font-size:0px;}
+.mark1 .down a {background:url('../images/mark_down.gif') no-repeat 0px 0px;}
+.mark1 .down a.mover {background:url('../images/mark_down.gif') no-repeat 0px -30px;}
+.mark1 .down a.marked {background:url('../images/mark_down.gif') no-repeat bottom left;}
+.mark1 .up a {background:url('../images/mark_up.gif') no-repeat top left;}
+.mark1 .up a.mover {background:url('../images/mark_up.gif') no-repeat center left;}
+.mark1 .up a.marked {background:url('../images/mark_up.gif') no-repeat bottom left;}
+
+.mark2 li a {background:url('../images/rating.gif') no-repeat top left;}
+.mark2 li a.mover {background:url('../images/rating.gif') no-repeat center left;}
+.mark2 li a.marked {background:url('../images/rating.gif') no-repeat bottom left;}
+.mark-note {height:60px; line-height:60px;}
+.mark-note-loading {padding-right:20px; background:url(../images/loading.gif) no-repeat center right;}
+
+.tbl-comment {margin:5px;}
+.tbl-comment .td1 {width:80px; text-align:right; font-weight:bold; color:#006699;}
+.tbl-comment .txt {width:200px; height:18px; padding-top:2px;}
+.tbl-comment textarea {width:400px; height:100px; line-height:22px;}
+.post-comment {width:100px; height:105px; font-size:18px; font-weight:bold;}
+.not-allow-comment {margin:20px;}
+
+.comment-list {margin-bottom:5px;}
+.comment-list .comment-form {background:#EFEFEF; margin:3px;}
+.comment-list dl {margin:10px; line-height:20px;}
+.comment-action {border-bottom:1px solid #336699; padding:0px 10px; color:#336699; height:27px; line-height:27px; background:transparent url(../images/list_detail_bg.png) repeat-x;}
+.comment-action a {font-size:12px; color:#003366;}
+
+/* topic/list */
+.iconlist ul {padding:7px;}
+.iconlist li {display:block; float:left; text-align:center; margin:2px; overflow:hidden; white-space:nowrap;}
+.topiclist li {width:89px; height:110px; overflow:hidden;}
+.topiclist li div {width:87px; height:90px; border:1px solid #999999; overflow:hidden;}
+.topiclist li div img {max-width:85px;}
+
+/* event/list */
+.eventlist li {width:229px; height:110px; overflow:hidden;}
+.eventlist li div {width:227px; height:90px; border:1px solid #999999; overflow:hidden;}
+.eventlist li div img {max-width:225px;}
+
+/* post/create */
+.sendfrm {line-height:25px; padding:5px; margin-bottom:10px;}
+.sendfrm .txt {width:320px; height:22px; line-height:22px; font-size:12px;}
+.sendfrm .frm-title {width:250px;}
+.sendfrm .frm-input {width:340px;}
+.validate {width:50px; height:18px; padding-top:2px; letter-spacing:1px;}
+.sendfrm textarea {width:580px; line-height:20px;}
+.sendfrm #summary {height:150px;}
+.sendfrm #content {height:350px;}
+.sendfrm .pic-validate {margin-top:1px;}
+.post-result ul {padding:20px 10px 30px 50px; line-height:25px;}
+
+/* site/signup */
+.signup .item {margin-top:20px;}
+.signup .item label {display:inline-block; width:60px; margin-right:10px; text-align:right; font-size:14px;}
+.signup .item .txt {width:200px;}
+.signup .item .agreement-label {width:auto; font-size:12px;}
+.signup-login {margin-top:80px;}
+
+/* 404 error page */
+.jiong {font-size:12em; width:160px;}
+.error-page {width:740px;}
+.error-page h1 {margin-top:25px;}

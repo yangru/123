@@ -1,0 +1,429 @@
+//custom
+//自定义纬度设置
+//位于网站设置的自定义行为统计的添加报告
+//2012/7/30 11:43:24
+//2012/7/31 14:41:22
+//--------------------------------------
+.keyWordSearcher {
+    overflow:hidden;
+    zoom:1;
+    .clearfix;
+}
+
+.siteMane {
+    .processTable {
+        padding:0;
+        .cl;
+    }
+} 
+
+.saveLat {
+    .saveLatSet {
+        margin: 0px 0 0 80px;
+    }
+}
+
+.latsetList {
+    .gridViewTableContent {
+        td {
+            height: 45px;
+        }
+        th {
+            height: 40px;
+        }
+    }
+}
+
+.latsetSetCtrl {
+    .size(auto,90px);
+}
+
+.Ex_latsetReportSelector {
+    .fl;
+    position: relative;
+    display: block;
+    margin: 0 16px 10px 10px;
+    width: 150px;
+    .Ex_reportDropdownList {
+        min-width: 160px;
+    }
+}
+
+.backlatsetList {
+    padding: 0px 5px;
+    .fl;
+    display: block;
+    cursor: pointer;
+    .size(55px,28px);
+    background: url(images/customIcon.png) no-repeat -368px -281px;
+    _background: url(images/customIcon.gif) no-repeat -368px -281px;
+    &:hover {
+        background-position: -441px -281px;
+    }
+    &:active {
+        background-position: -514px -281px;
+    }
+}
+
+.latsetAddCtrl {
+    padding: 0px 5px;
+    .fr;
+    display: block;
+    cursor: pointer;
+    .size(93px,29px);
+    background: url(images/customIcon.png) no-repeat -582px -281px;
+    _background: url(images/customIcon.gif) no-repeat -582px -281px;
+    &:hover {
+        background-position: -582px -316px;
+    }
+    &:active {
+        background-position: -582px -352px;
+    }
+}
+
+.latsetListCtrl {
+    .size(auto,30px);
+    padding-bottom: 10px;
+    .clearfix;
+}
+
+.latsetLine {
+    .border();
+    margin: 25px 0px 15px 0px;
+}
+
+.latitude {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 2;
+    .size(124px,29px);
+    .clearfix;
+    .list {
+        .fl;
+        display: block;
+        cursor: pointer;
+        .size(76px,29px);
+        background: url(images/customIcon.png) no-repeat -450px -13px;
+        _background: url(images/customIcon.gif) no-repeat -450px -13px;
+        &:hover {
+            background-position: -450px -55px;
+        }
+        &:active {
+            background-position: -450px -97px;
+        }
+    }
+    .listed {
+        background-position: -450px -55px;
+    }
+    .set {
+        .fl;
+        display: block;
+        cursor: pointer;
+        .size(48px,29px);
+        background: url(images/customIcon.png) no-repeat -527px -13px;
+        _background: url(images/customIcon.gif) no-repeat -527px -13px;
+        &:hover {
+            background-position: -527px -55px;
+        }
+        &:active {
+            background-position: -527px -97px;
+        }
+    }
+    .seted {
+        background-position: -527px -55px;
+    }
+}
+
+.latNav {
+    .size(100%,38px);
+    padding: 10px;
+    .clearfix;
+}
+
+.latNavOneIcon {
+    display: inline;
+    .fl;
+    .size(38px,38px);
+    border: 0 !important;
+    vertical-align: middle;
+    background: url(images/customIcon.png) -226px -228px no-repeat;
+    _background: url(images/customIcon.gif) no-repeat;
+}
+
+.NavOne, .NavTwo {
+    cursor: pointer;
+}
+
+.latNavOne {
+    line-height: 38px;
+    display: inline;
+    .fl;
+    height: 38px;
+    padding-left: 10px;
+}
+
+.latNavLinkF {
+    display: inline;
+    .fl;
+    background: #f0efef;
+    font-size: 2px;
+    .size(122px,2px);
+    margin: 19px 10px 0;
+}
+
+.latNavLinkT {
+    display: inline;
+    .fl;
+    .size(122px,2px);
+    background: #66cfff;
+    font-size: 2px;
+    margin: 19px 10px 0;
+}
+
+.latNavTwoIconF {
+    display: inline;
+    .fl;
+    .size(38px,38px);
+    border: 0 !important;
+    vertical-align: middle;
+    background: url(images/customIcon.png) -273px -184px no-repeat;
+    _background: url(images/customIcon.gif) no-repeat;
+}
+
+.latNavTwoIconT {
+    display: inline;
+    .fl;
+    .size(38px,38px);
+    border: 0 !important;
+    vertical-align: middle;
+    background: url(images/customIcon.png) -273px -228px no-repeat;
+    _background: url(images/customIcon.gif) no-repeat;
+}
+
+.latNavTwo {
+    display: inline;
+    float: left;
+    .size(160px,38px);
+    line-height: 38px;
+    padding-left: 10px;
+}
+
+.stepOne, .stepTwo {
+    padding: 20px 20px 40px 30px;
+}
+
+.latName {
+    height: 42px;
+    margin-bottom: 10px;
+}
+
+.latName {
+    input {
+        line-height: 10px;
+        .transition(0.3s, ease-in-out ,all);
+        .border(1px,solid,#d1d1d1);
+        outline: none;
+        .size(220px,16px);
+        .borderRadius();
+        padding: 4px;
+    }
+    &:active {
+        background-color: #fefcf4;
+    }
+}
+
+.error {
+    padding-left: 5px;
+    color: red;
+    height: 20px;
+}
+
+.chooseTpl {
+    height: 260px;
+    padding: 0px 0 10px 0;
+    .clearfix;
+    ul {
+        .fl;
+        border-right: .1em solid #d5d4d4;
+        height: 210px;
+        li {
+            div {
+                height: 30px;
+                line-height: 30px;
+                cursor: pointer;
+                margin: 3px 0;
+                padding: 0 10px;
+                .tc;
+            }
+            &:hover {
+                color: #39f;
+            }
+        }
+        .act {
+            background-color: #4a4a4a;
+            .borderRadius(5px);
+            color: @white;
+        }
+    }
+}
+
+.latTemplate {
+    padding: 0 30px 0 0;
+}
+
+.subTpl {
+    padding: 0 30px 0 20px;
+}
+
+.previewTpl {
+    .fl;
+    padding: 0 30px 0 20px;
+}
+
+.previewTpl {
+    h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}
+
+.previewTable {
+    tr:nth-child(odd) {
+        background: @grayLightest;
+    }
+    td {
+        .tc;
+        .border(.1em,solid,@grayLighter);
+        border-collapse: collapse;
+        height: 15px;
+        padding: 8px 10px;
+    }
+    th {
+        .border(.1em,solid,@tableBorder);
+        border-collapse: collapse;
+        color: #333;
+        font-size: @baseFontSize;
+        .tc;
+        background: @tableGradientEnd;
+        font-weight: normal;
+        padding: 10px 25px;
+    }
+}
+
+.saveLat {
+    padding-top: 20px;
+}
+
+.saveLine {
+    display: inline;
+    .fl;
+    .size(100%,2px);
+    background: #f0efef;
+    font-size: 2px;
+    margin: 0px 0px 20px 0px;
+}
+
+.nextLat {
+    .nextLatSet {
+        margin-left: 80px;
+        border: none;
+        .size(78px,30px);
+        background: url(images/customIcon.png) no-repeat transparent -130px -12px;
+        _background: url(images/customIcon.gif) no-repeat transparent -130px -12px;
+        display: inline;
+        &:hover {
+            background-position: -130px -55px;
+        }
+        &:active {
+            background-position: -130px -101px;
+        }
+    }
+    .cancleLatSet {
+        cursor: pointer;
+    }
+}
+
+.setLabel, .setValue {
+    .fl;
+}
+
+.saveSet {
+    margin: 0 20px;
+    border: none;
+    .size(78px,30px) !important;
+    background: url(images/customIcon.png) no-repeat transparent -223px -12px;
+    _background: url(images/customIcon.gif) no-repeat transparent -223px -12px;
+    display: inline;
+    &:hover {
+        background-position: -225px -55px;
+    }
+    &:active {
+        background-position: -225px -99px;
+    }
+}
+
+.cancleSet {
+    cursor: pointer;
+}
+
+.setLat {
+    .clearfix;
+    h3 {
+        margin: 5px 0px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    ul {
+        background-color: #f5f5f5;
+        .size(210px,160px);
+        .borderRadius(5px);
+        .border(.1em solid #cfcfcf);
+        padding: 20px 15px;
+        margin-right: 40px;
+        label {
+            padding-right: 10px;
+        }
+        input {
+            line-height: 11px;
+            .transition(0.3s, ease-in-out ,all);
+            .border(.1em,solid,#cfcfcf);
+            outline: none;
+            .size(150px,11px);
+            .borderRadius();
+            padding: 8px;
+            margin: 0px;
+            &:active {
+                background-color: #fefcf4;
+            }
+        }
+        li {
+            padding: 6px 0 5px 6px;
+        }
+    }
+}
+
+.codeTpl {
+    textarea {
+        resize: none;
+        .size(450px,216px);
+        padding: 1em;
+        margin: 0 auto 1em;
+        display: block;
+        .tl;
+    }
+    h3 {
+        .tc;
+        cursor: default !important;
+        font-weight: normal;
+        font-size: 14px !important;
+    }
+    .latJs {
+        .tc;
+    }
+}
+
+.latsetPopCtrl {
+    .tc;
+}

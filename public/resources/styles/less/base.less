@@ -1,0 +1,230 @@
+// baes.less 统一全站字体，链接，导航，列表，下拉，表格的颜色大小等。
+// -----------------------------------------------------
+
+// 全局字体
+// -------------------------
+@sansFontFamily:                    "Microsoft YaHei",Arial, Helvetica, sans-serif;
+@baseFontSize:                      12px;
+@baseFontFamily:                    @sansFontFamily;
+@baseLineHeight:                    18px;
+@headingsFontFamily:                inherit; 
+@headingsFontWeight:                bold;    
+@headingsColor:                     inherit; 
+
+
+// 基础颜色
+// -------------------------
+@black:                             #0D0D0D;
+@grayDarker:                        #515D68;
+@grayDark:                          #555;
+@gray:                              #808080;
+@grayLight:                         #B7B6B6;
+@grayLighter:                       #EAEAEA;
+@grayLightest:                      #F8F8F8;
+@white:                             #FFF;
+@blue:                              #33B5E5;
+@blueLight:                         #D9EFF7;
+@blueLighter:                       #F2FCFF;
+@blueLink:                          #498FCA;
+@blueLinkhover:                     #3399FF;
+@red:                               #EF3248;
+@pink:                              #FF005F;
+@green:                             #5BB601;
+@greenLight:                        #0EC900;
+
+
+// body和文字的颜色
+// -------------------------
+@bodyBackground:                    @blueLight;
+@textColor:                         @grayDark;
+
+
+// 链接
+// -------------------------
+@linkColor:                         @blueLink;
+@linkColorHover:                    @blueLinkhover;    //darken(@linkColor, 15%);
+
+//滚动条设定
+body::-webkit-scrollbar{}
+body::-webkit-scrollbar:hover{}
+body::-webkit-scrollbar-thumb{}
+body::-webkit-scrollbar-thumb:hover{}
+body::-webkit-scrollbar-thumb:active{}
+
+
+//全局内边距和外边距
+//-----------------------------
+.pd10{padding:10px;}
+
+//上右下左距离为20px，例如模块间边距
+//----------------------------------
+.ml20{margin-left:20px;}
+.mr20{margin-right:20px;}
+.mb20{margin-bottom:20px;}
+.mt20{margin-top:20px;}
+
+//上右下左距离为15px，例如按钮间边距
+//----------------------------------
+.ml15{margin-left:15px;}
+.mr15{margin-right:15px;}
+.mb15{margin-bottom:15px;}
+.mt15{margin-top:15px;}
+
+//文字对齐
+//---------------------------------
+.tc{text-align:center;} //居中
+.tl{text-align:left;}   //左对齐
+.tr{text-align:right;}  //右对齐
+
+//浮动
+//---------------------------------
+.fl{float:left;}
+.fr{float:right;}
+
+//关闭按钮
+.closeBtn {
+  float: right;
+  font-size: 20px;
+  font-weight: @headingsFontWeight;
+  line-height: @baseLineHeight;
+  color: @grayDark ;
+  text-shadow: 0 1px 0 @white;
+  opacity:.2;
+  filter: ~"alpha(opacity=20)";
+  position: relative;
+  top: -2px;
+  right: 0;
+  &:hover{color:@black;cursor:pointer;}
+}
+
+// 清除浮动
+// ---------------------------------
+.cl{clear:both;}
+.clearfix {
+  *zoom: 1;
+  &:after {
+    content:".";display:block;clear:both;visibility:hidden;height:0;
+  }
+}
+
+// 居中块级元素
+// ----------------------------------
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ie7-inline-block() {
+  *display: inline;  // IE7的inline-block
+  *zoom: 1;
+}
+
+// 列表hover
+.beSelected{
+  background-color:#e8f6ff;
+}
+.beSelectedEm {
+  background-color:#8ec8ed;
+}
+
+// 圆角边框
+//----------------------------
+.borderRadius (@radius: 3px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+// 一般按钮的box-shadow 
+//----------------------------
+.boxShadow () {
+  box-shadow: ~"0 1px 3px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.5)";
+  -moz-box-shadow: ~"0 1px 3px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.5)";
+  -webkit-box-shadow: ~"0 1px 3px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.5)";
+}
+
+//input,select,textarea的box-shadow,简称"ist"...
+//----------------------------
+.istShadow () {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+
+// :active时按钮的box-shadow
+//----------------------------
+.boxShadowActive () {
+  box-shadow: ~"0 1px 3px rgba(0,0,0,.15), inset 0 2px 4px rgba(56,56,56,.2)";
+  -moz-box-shadow: ~"0 1px 3px rgba(0,0,0,.15), inset 0 2px 4px rgba(56,56,56,.2)";
+  -webkit-box-shadow: ~"0 1px 3px rgba(0,0,0,.15), inset 0 2px 4px rgba(56,56,56,.2)";
+}
+
+// 过渡效果
+//----------------------------
+.transition(@duration:0.1s, @type:linear ,@property:all){
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  transition: @arguments;
+}
+
+
+// 表格
+// -------------------------
+@tableBackground:                   @white; 
+@tableBackgroundAccent:             @grayLightest; 
+@tableBackgroundHover:              #EFFBFE; 
+@tableBorder:                       #C8CCCD; 
+@tdBorder:                          @grayLighter;  //表格td边框颜色
+@tableGradientStart:                #F7F7F7;       //表头渐变开始颜色
+@tableGradientEnd:                  #EFEFEF;       //表头渐变结束颜色
+
+
+// 下拉列表
+// -------------------------
+@dropdownBackground:              @white;
+@dropdownBorder:                  rgba(0,0,0,.2);
+@dropdownLinkColor:               @grayDark;
+@dropdownLinkColorHover:          @white;
+@dropdownLinkBackgroundHover:     @linkColor;
+@dropdownDividerTop:              #e5e5e5;
+@dropdownDividerBottom:           @white;
+
+
+// Z-index列表
+// -------------------------
+@zindexDropdown:                  1000;
+@zindexPopover:                   1010;
+@zindexTooltip:                   1020;
+@zindexFixedNavbar:               1030;
+@zindexModalBackdrop:             1040;
+@zindexModal:                     1050;
+
+// 表单占位符的颜色
+// -------------------------
+@placeholderText:                 @grayLight;
+
+
+// hr边框颜色
+// -------------------------
+@hrBorder:                        @grayLighter;
+
+
+// 导航栏
+// -------------------------
+@navbarHeight:                    40px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+@navbarBrandColor:                @navbarLinkColor;

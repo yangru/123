@@ -1,0 +1,116 @@
+@charset "utf-8";
+#container{
+    min-width:950px;
+}
+#theBigFrameHead{
+    width:950px;
+}
+.G-frameBodyInnner{
+    width:950px;
+}
+.frameBodyBox:after {
+    width: 950px;
+}
+#imOutterArea{
+    float: right;
+    width:780px;
+}
+#imOutterArea .showTop {
+    background: none no-repeat scroll 0 0 #FFFFFF;
+    overflow: hidden;
+}
+#imOutterArea .showTop .left {
+    border-left: 1px solid #B5B5B5;
+    border-right: 1px solid #B5B5B5;
+    border-top: 1px solid #B5B5B5;
+    float: left;
+    width:775px;
+}
+#imOutterArea .showTop .left .inArea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    margin: 0;
+    min-height: 60.8em;
+    padding: 20px;
+    position: relative;
+    width:735px;
+}
+#imOutterArea .showTop .right {
+    float: right;
+    width: 3px;
+}
+#imOutterArea .showTop .right .bg_top {
+    background: url("images/bg_lan_right_top.png") no-repeat scroll 0 0 transparent;
+    height: 3px;
+    width: 3px;
+}
+#imOutterArea .showTop .right .bg_y {
+    background: url("images/bg_lan_right_y.png") repeat-y scroll 0 0 transparent;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    width: 3px;
+}
+#imOutterArea .showBottom {
+    background: url("images/bg_showArea_bottom_780.png") no-repeat scroll 0 0 transparent;
+    height: 4px;
+    width:780px;
+}
+.npadding{
+	margin:5px 10px;
+}
+.trainContent .condition .input_condition ul li {
+    margin: 0 30px 10px 0;
+}
+.trainContent .condition .radio_condition ul li {
+    margin: 0 10px 10px 5px;
+}
+.trainContent .condition .radio_condition .leftR {
+    width:350px;
+}
+.trainContent .condition .radio_condition .rightR {
+    width:340px;
+}
+.manualContent {
+    padding:10px 5px;
+}
+.manualContent .top p{
+	float:left;
+	margin:0 15px 15px 0;
+}
+.manualContent .top p input.recommInput{
+	width:120px;
+}
+.selectCondition .bottomCon ul li {
+    margin: 0 5px 0 0;
+    padding: 8px 12px 0;
+}
+.selectCondition .bottomCon ul li.active {
+    padding: 7px 11px 0;
+}
+#feedback_chart{
+	width:703px;
+}
+.previewContent {
+    padding: 20px 10px 20px 10px;
+}
+.previewContent p{
+	float: left;
+    margin:10px 10px 0 0;
+}
+.previewContent p.last {
+    float: right;
+    margin:10px 18px 0 0;
+}
+#uservid {
+    width: 220px;
+}
+.preview_result .resultContent .vedio_listnr {
+    margin:20px 7px 0 7px;
+}
+.G-tableSet .theTableBox .theGridFooter .grid-page a  {
+    margin: 0 0.2em;
+    padding: 0.3em 0.2em;
+}
+.preview_result .resultContent .result_user .user_listnr,.preview_result .resultContent .result_friends .friends_listnr{
+	margin:20px 0 0 0;
+}

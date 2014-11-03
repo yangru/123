@@ -1,0 +1,137 @@
+//behavior
+//受访频道,位于效果分析
+//2012/7/30 11:33:06
+//2012/7/31 14:15:13
+//--------------------------------------
+.Ex_behavior {
+    .tip {
+        font-size: 14px;
+        color: #5b5c5c;
+        strong {
+            color: #292929;
+        }
+    }
+    .theTimes {
+        overflow: hidden;
+        margin: 15px 0;
+        zoom: 1;
+        .inset {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            div {
+                .border(1px,solid,#e1dfdf);
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin-left: 37px;
+                .tc;
+            }
+        }
+    }
+    .timeA {
+        position: relative;
+        .fl;
+        .size(45%,39px);
+        line-height: 36px;
+        strong {
+            background: url(images/beBg_03.jpg) 0 0 repeat-x;
+            font-size: @baseLineHeight;
+            color: #5b5c5c;
+            .tc;
+            display: block;
+            width: 37px;
+            .border(1px,solid,#e1dfdf);
+            border-right: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+    .timeB {
+        position: relative;
+        .fr;
+        .size(45%,39px);
+        line-height: 36px;
+        strong {
+            background: url(images/beBg_03.jpg) 0 0 repeat-x;
+            font-size: @baseLineHeight;
+            color: #5b5c5c;
+            .tc;
+            display: block;
+            width: 37px;
+            .border(1px,solid,#e1dfdf);
+            border-right: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .Ex_theAdvFilter {
+            a {
+                float: none;
+                padding: 4px 38px;
+                &:hover {
+                    background-position: 0px -76px;
+                }
+            }
+        }
+    }
+    .inputDate, .btn {
+        vertical-align: middle;
+    }
+    .inputDate {
+        width: 83px;
+        padding: 1px 5px;
+        margin: 0 4px;
+        background-position: 68px 0 !important;
+    }
+    .okgo {
+        .cl;
+        border-top: 1px solid #d3d3d3;
+        margin-top: 12px;
+        .fl;
+        width: 100%;
+        div {
+            background: url(images/beOkBg_07.jpg) 50.5% 0 no-repeat;
+            margin-top: -1px;
+            .tc;
+        }
+        .okBtn {
+            margin-top: 27px;
+            border: none;
+            .size(78px,30px) !important;
+            background: url(images/advfliter.gif) -183px -111px no-repeat;
+            _background: url(images/advfliter.gif) -183px -111px no-repeat;
+        }
+        .cancelSet {
+            margin: 27px 0 0 10px;
+            border: none !important;
+            background: none !important;
+            display: none;
+        }
+    }
+}
+
+.Ex_selectChanle, .Ex_selectChanleShow {
+    color: #45630c;
+    text-shadow: #C3DF89 1px 1px 0;
+    .tl;
+    text-indent: 9px;
+    background: url(images/behaviorBnt.png) 0 0 no-repeat;
+    _background: url(images/behaviorBnt.gif) 0 0 no-repeat;
+    .size(76px,24px)!important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.Ex_selectChanleShow {
+    background-position: 0 -25px !important;
+}
+
+.chanleSelector {
+    width: 130px;
+    min-width: 130px;
+}
+
+.pathListCtrl {
+    .size(auto,30px);
+    padding-bottom: 10px;
+}

@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/*commonGrid*/
+//表格整体
+//----------------------------
+.grid{
+
+}
+
+//主表格
+//--------------------------------------
+.table{
+  clear:both;
+  overflow: auto;
+  position: relative;
+  font-size: @baseFontSize; 
+  margin-bottom: 10px;
+}
+
+//主表格内嵌层
+//----------------------------------
+.gridTable{
+  width: 100%;
+  border: .1em solid #D2D5D7;
+
+  .NoSubZebraLine tr:nth-child(even) {
+    background:@grayLightest;
+  }
+
+  .zebraLine tr:nth-child(4n+3) {
+    background:@grayLightest;
+  }
+}
+
+//主表格表头
+//----------------------------------
+.gridHead{
+  height:33px;
+
+  tr{
+    background: #EFEFEF;//warn 有渐变，不需要
+    .setGradient(@tableGradientStart, @tableGradientEnd);
+    margin: 30px 0 0 10px;
+
+    th{
+      padding: 9px 8px;
+      text-align: right;
+      color: #333;
+      font-size: @baseFontSize;
+      white-space: nowrap;
+      border-bottom: .1em solid @tableBorder;
+      border-top: .1em solid @tableBorder;
+      border-collapse: collapse;
+
+      //表头文本
+      //------------------------------------------
+      div{
+        text-align: right;
+        position: relative;
+        font-size: @baseFontSize;
+
+        span{
+          text-align: right;
+          font-weight: normal !important;
+          font-size: @baseFontSize;
+          white-space: nowrap;
+          display: inline-block;
+          margin: 0 @baseFontSize 0 0;
+        } //span
+      } //div
+    } //th
+  } //tr
+} //gridHead
+
+.gridSortTypeDes,.gridSortTypeAsc {
+  background:url(images/upanddown.png) 0 0 no-repeat;
+  display:none;
+  height:24px;
+  width:6px;
+  line-height:999em;
+  overflow:hidden;
+  position:absolute;
+  right:-13px;
+  top:6px;
+  _background:url(images/blank.gif) 0 0 no-repeat;
+  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/resources/style/images/upanddown.png",sizingMethod="scale");
+}
+
+.gridSortTypeAsc {
+  background-position:0 -36px;
+}
+
+.showGridFnIcon {
+  //warn 不能直接写rgba
+  background:rgba(255,255,255,.7)!important;
+}
+
+// .showGridFnIconed {
+//   background:#f1f0f0!important;
+//   //warn css3都要包起来
+//   box-shadow:0 2px 5px rgba(0,0,0,0.2) inset;
+// }
+
+.showGridFnIcon:active {
+  background:#f1f0f0!important;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2) inset;
+}
+
+.showGridState .gridSortTypeDes,.showGridState .gridSortTypeAsc {
+  display:block;
+}
+
+//主表单
+//-----------------------------------------
+.gridBody{
+  tr{
+    background: @white;
+    &:hover {
+      background: @tableBackgroundHover;
+    }
+    &:hover td,&:hover th {
+      background-color: transparent;
+    }
+    &:hover td.isSort,&:hover th.isSort {
+      background-color: rgba(139,138,138, .1);
+    }
+
+
+    td{
+      vertical-align: middle;
+      text-align: right;
+      border: 1px solid @grayLighter;
+      border-collapse: collapse;
+      border-bottom: none;
+      border-left: none;
+      >div{
+        text-align: right;
+        position: relative;
+        font-size: @baseFontSize;
+        >span{
+          text-align: right;
+          white-space: nowrap;
+          display: inline;
+        }
+
+        .btnCtrl{
+          overflow: hidden;
+          text-align: left;
+          padding: 2px;
+          position: absolute;
+          top:-3px;
+          border-radius: 10px;
+          background: none;
+          z-index: 1;
+        }
+      }
+
+      .tableCtrl a{
+        padding:0px 5px;
+      }
+
+      .icon{
+        .size(10px, 15px);
+        margin-left:10px;
+      }
+    }
+
+    td.isSort{
+      background: rgba(138,138,138,.1);
+    }
+  }
+
+  input {
+    margin:0 2px 0 0;
+    vertical-align: -20%;
+  }
+
+  tr.subIsShow{
+    background: #ECECEC url(images/subBgTop.gif) top repeat-x;
+    border: 1px solid #C0BBBB;
+
+    th{
+      background: #EFEFEF;
+      .setGradient(@tableGradientStart, @tableGradientEnd);
+      margin: 30px 0 0 10px;
+    }
+
+    .flowsArrow {
+      position: absolute;
+      top: -16px;
+      left: 25px;
+      .size(18px, 11px);
+      display: block;
+      background: url(images/subArr.gif) 0 0 no-repeat;
+    }
+
+    td.subTd {
+      background: url(images/subBgBottom.gif) bottom repeat-x;
+      padding: 15px;
+      border: none;
+    }
+  }
+}
+
+#popCommonGrid {
+}
+
+.theGridMarkLayout {
+  background:rgba(0,0,0,.3) url(images/grid_loader.gif) center no-repeat;
+  position:absolute!important;
+  top:0;
+  left:0;
+  width:100%!important;
+  height:100%!important;
+  display:none;
+  z-index:5;
+
+  div {
+    text-align:center;
+    color:@white;
+    position:absolute;
+    top:48%;
+    width:100%;
+  }
+}
+
+//子层图标
+//------------------------------------------
+.gridTable .subdefIconClose,
+.gridTable .subdefIconOpen,
+.gridTable .subvisitIconClose,
+.gridTable .subvisitIconOpen,
+.gridTable .subflowIconClose,
+.gridTable .subflowIconOpen,
+.gridTable .subpageIconClose,
+.gridTable .subpageIconOpen,
+.gridTable .subkeywordIconClose,
+.gridTable .subkeywordIconOpen,
+.gridTable .subspotIconClose,
+.gridTable .subspotIconOpen,
+.gridTable .subgeoIconClose,
+.gridTable .subgeoIconOpen,
+.gridTable .subrefererIconClose,
+.gridTable .subrefererIconOpen,
+.gridTable .subcustomsIconClose,
+.gridTable .subcustomsIconOpen,
+.gridTable .subseIconClose,
+.gridTable .subseIconOpen,
+.gridTable .sublandingIconClose,
+.gridTable .sublandingIconOpen,
+.gridTable .subloyaltyIconClose,
+.gridTable .subloyaltyIconOpen,
+.gridTable .subdepathIconClose,
+.gridTable .subtrendIconClose,
+.gridTable .subtrendIconOpen,
+.gridTable .subclientIconOpen,
+.gridTable .subclientIconClose,
+.gridTable .subdepathIconOpen,
+.gridTable .subheatmapIconClose,
+.gridTable .subheatmapIconOpen {
+  display:inline-block;
+  width:16px;
+  height:17px;
+  margin:0 0 0 7px;
+  border:0!important;
+  vertical-align:middle;
+  cursor:pointer;
+  padding:0;
+  background:url(images/icons_grid.png) no-repeat;
+  _background:url(images/icons_grid.gif) no-repeat;
+}
+
+//Default
+//---------------------------------------
+.gridTable .subdefIconClose {
+  background-position:-8px -43px;
+}
+
+.gridTable .subdefIconOpen {
+  background-position:-8px -55px;
+}
+
+//Visit
+//---------------------------------------
+.gridTable .subvisitIconClose {
+  background-position:-10px -244px;
+}
+
+.gridTable .subvisitIconOpen {
+  background-position:-10px -222px;
+}
+
+.gridTable .subvisitIconClose:hover {
+  background-position:-10px -222px;
+}
+
+//Flow
+//---------------------------------------
+.gridTable .subflowIconClose {
+  background-position:-10px -290px;
+}
+.gridTable .subflowIconOpen {
+  background-position:-10px -268px;
+}
+.gridTable .subflowIconClose:hover {background-position:-10px -268px!important;}
+//Page
+//---------------------------------------
+.gridTable .subpageIconClose {
+  background-position:-10px -199px;
+}
+
+.gridTable .subpageIconOpen {
+  background-position:-10px -153px;
+}
+
+.gridTable .subpageIconClose:hover {
+  background-position:-10px -153px!important;
+}
+
+//Keyword
+//---------------------------------------
+.gridTable .subkeywordIconClose {
+  background-position:-56px -268px!important;
+}
+
+.gridTable .subkeywordIconOpen {
+  background-position:-77px -268px!important;
+}
+
+.gridTable .subkeywordIconClose:hover {
+  background-position:-77px -268px!important;
+}
+
+//Search
+//---------------------------------------
+.gridTable .subseIconClose {
+  background-position:-10px -176px!important;
+}
+
+.gridTable .subseIconOpen {
+  background-position:-10px -130px!important;
+}
+
+.gridTable .subseIconClose:hover {
+  background-position:-10px -130px!important;
+}
+
+//Ad
+//---------------------------------------
+.gridTable .subspotIconClose {
+  background-position:-10px -332px!important;
+}
+
+.gridTable .subspotIconOpen {
+  background-position:-10px -310px!important;
+}
+
+.gridTable .subspotIconClose:hover {
+  background-position:-10px -310px!important;
+}
+
+//Geo
+//---------------------------------------
+.gridTable .subgeoIconClose {
+  background-position:-34px -376px!important;
+}
+
+.gridTable .subgeoIconOpen {
+  background-position:-34px -354px!important;
+}
+
+.gridTable .subgeoIconClose:hover {
+  background-position:-34px -354px!important;
+}
+
+//Referer
+//---------------------------------------
+.gridTable .subrefererIconClose {
+  background-position:-34px -332px!important;
+}
+
+.gridTable .subrefererIconOpen {
+  background-position:-34px -310px!important;
+}
+
+.gridTable .subrefererIconClose:hover {
+  background-position:-34px -310px!important;
+}
+
+//Customs
+//---------------------------------------
+.gridTable .subcustomsIconClose {
+  background-position:-34px -290px!important;
+}
+
+.gridTable .subcustomsIconOpen {
+  background-position:-34px -268px!important;
+}
+
+.gridTable .subcustomsIconClose:hover {
+  background-position:-34px -268px!important;
+}
+
+//Landing
+//---------------------------------------
+.gridTable .sublandingIconClose {
+  background-position:-56px -290px!important;
+}
+
+.gridTable .sublandingIconOpen {
+  background-position:-77px -290px!important;
+}
+
+.gridTable .sublandingIconClose:hover {
+  background-position:-77px -290px!important;
+}
+
+//loyalty
+//---------------------------------------
+.gridTable .subloyaltyIconClose {
+  background-position:-56px -332px!important;
+}
+
+.gridTable .subloyaltyIconOpen {
+  background-position:-75px -332px!important;
+}
+
+.gridTable .subloyaltyIconClose:hover {
+  background-position:-75px -332px!important;
+}
+
+//client
+//---------------------------------------
+.gridTable .subclientIconClose {
+  background-position:-58px -376px!important;
+}
+
+.gridTable .subclientIconOpen {
+  background-position:-76px -376px!important;
+}
+
+.gridTable .subclientIconClose:hover {
+  background-position:-76px -376px!important;
+}
+
+
+//Depath
+//---------------------------------------
+.gridTable .subdepathIconClose {
+  background-position:-56px -310px!important;
+}
+
+.gridTable .subdepathIconOpen {
+  background-position:-75px -310px!important;
+}
+
+.gridTable .subdepathIconClose:hover {
+  background-position:-75px -310px!important;
+}
+
+//heatmap
+//---------------------------------------
+.gridTable .subheatmapIconClose {
+  background-position:-10px -376px!important;
+}
+
+.gridTable .subheatmapIconOpen {
+  background-position:-10px -354px!important;
+}
+
+.gridTable .subheatmapIconClose:hover {
+  background-position:-10px -354px!important;
+}
+
+
+//Trend
+//---------------------------------------
+.gridTable .subtrendIconClose {
+  background-position:-34px -398px!important;
+}
+
+.gridTable .subtrendIconOpen {
+  background-position:-34px -398px!important;
+}
+
+.gridTable .subtrendIconClose:hover {
+  background-position:-10px -398px!important;
+}

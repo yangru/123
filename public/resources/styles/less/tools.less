@@ -1,0 +1,49 @@
+// 放置公用方法
+//--------------------------------
+
+// 设置大小宽度和高度，例如.size(40px, 30px)
+// -------------------------
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+// 透明度设置，例如.opacity(30)
+// ----------------------------------
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+//边框的设置，默认为1px,solid,#ccc;例如要改变.border(1px,dashed,#ddd);
+//-------------------------------------
+.border(@width:1px, @type:solid, @color:#ccc){ 
+  border: @arguments;
+}
+
+// 设置一般渐变，例如.setGradient(#fff, #000)
+// -------------------------
+.setGradient(@start, @end) {
+  background: -webkit-gradient(linear, 0 41%, 100% 0, from(@start), to(@end));
+  background: -webkit-linear-gradient(top, @start, @end);
+  background: -moz-linear-gradient(top, @start,  @end);
+  background: -ms-linear-gradient(top, @start, @end);
+  background: -o-linear-gradient(top, @start, @end);
+  background: linear-gradient(top, @start, @end);
+  filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d', GradientType=0)",@start,@end));
+  -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorStr='%d', EndColorStr='%d', GradientType=0))",@start,@end);
+}
+
+// 设置:hover & :active渐变，例如.setGradient(40px, 30px)
+// -------------------------
+.setHoverActiveGradient(@start, @end) {
+  background: @start;
+  background: -moz-linear-gradient(top,  @start 0%, @end 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@end));
+  background: -webkit-linear-gradient(top,  @start 0%,@end 100%);
+  background: -o-linear-gradient(top,  @start 0%,@end 100%);
+  background: -ms-linear-gradient(top,  @start 0%,@end 100%);
+  background: linear-gradient(to bottom,  @start 0%,@end 100%);
+  filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d', GradientType=0)",@start,@end));
+  -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorStr='%d', EndColorStr='%d', GradientType=0))",@start,@end);
+}

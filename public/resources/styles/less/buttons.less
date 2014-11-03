@@ -1,0 +1,188 @@
+// 按钮
+// ------------------------- 
+@btnWidth:                          64px;
+@btnHeight:                         28px;
+@btnLineHeight:                     28px;
+@btnFontSize:                       14px;
+@btnBorderRadius:                   3px;
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #ccc;
+
+@btnGrayGradientStart:              #F9F9F9;   //灰色按钮渐变 开始 颜色
+@btnGrayGradientEnd:                #EBEBEB;   //灰色按钮渐变 结束 颜色
+
+@btnGrayHoverGradientStart:         #EFEFEF;   //灰色按钮:hover渐变 开始 颜色
+@btnGrayHoverGradientEnd:           #F9F9F9;   //灰色按钮:hover渐变 结束 颜色
+
+@btnGrayActiveGradientStart:        #F1F1F1;   //灰色按钮:active渐变 开始 颜色
+@btnGrayActiveGradientEnd:          #F9F9F9;   //灰色按钮:active渐变 结束 颜色
+
+//---------------------------
+@btnGreenGradientStart:              #B8D872;   //绿色按钮渐变 开始 颜色
+@btnGreenGradientEnd:                #A3CD5A;   //绿色按钮渐变 结束 颜色
+
+@btnGreenHoverGradientStart:         #C9E284;   //绿色按钮:hover渐变 开始 颜色
+@btnGreenHoverGradientEnd:           #9FCB56;   //绿色按钮:hover渐变 结束 颜色
+
+@btnGreenActiveGradientStart:        #98C74F;   //绿色按钮:active渐变 开始 颜色
+@btnGreenActiveGradientEnd:          #ABD163;   //绿色按钮:active渐变 结束 颜色
+
+//---------------------------
+@btnBlueGradientStart:               #0081cc;   //蓝色按钮渐变 开始 颜色
+@btnBlueGradientEnd:                 #0058cc;   //蓝色按钮渐变 结束 颜色
+
+@btnBlueHoverGradientStart:          #149EEE;   //蓝色按钮:hover渐变 开始 颜色
+@btnBlueHoverGradientEnd:            #0B68E3;   //蓝色按钮:hover渐变 结束 颜色
+
+@btnBlueActiveGradientStart:         #036CDC;   //蓝色按钮:active渐变 开始 颜色
+@btnBlueActiveGradientEnd:           #0677CF;   //蓝色按钮:active渐变 结束 颜色
+
+//---------------------------
+@btnRedGradientStart:               #EE5656;   //红色按钮渐变 开始 颜色
+@btnRedGradientEnd:                 #D50000;   //红色按钮渐变 结束 颜色
+
+@btnRedHoverGradientStart:          #D51111;   //红色按钮:hover渐变 开始 颜色
+@btnRedHoverGradientEnd:            #FA0D0D;   //红色按钮:hover渐变 结束 颜色
+
+@btnRedActiveGradientStart:         #D50505;   //红色按钮:active渐变 开始 颜色
+@btnRedActiveGradientEnd:           #F02020;   //红色按钮:active渐变 结束 颜色
+
+//绿色按钮
+//----------------------------------------
+.btnGreen{
+  .size(@btnWidth,@btnHeight);
+  line-height: @btnLineHeight;
+  cursor: pointer;
+  font-size:@btnFontSize;
+  display: inline-block;
+  text-align:center;
+  background-color: @btnGreenGradientStart;
+  background-repeat: no-repeat;
+  .setGradient(@btnGreenGradientStart, @btnGreenGradientEnd);
+  color: #45630C;
+  border: .1em solid #85A948;
+  border-bottom-color: #6d8f33;
+  .borderRadius();
+  .boxShadow();
+  .transition();
+
+ &:hover{.btnGreenHover();}
+ &:active{.btnGreenActive();}
+}
+
+//绿色按钮:hover
+.btnGreenHover() {
+  .setHoverActiveGradient(@btnGreenHoverGradientStart, @btnGreenHoverGradientEnd);
+}
+
+//绿色按钮:active
+.btnGreenActive() {
+  .setHoverActiveGradient(@btnGreenActiveGradientStart, @btnGreenActiveGradientEnd);
+  .boxShadowActive();
+}
+
+
+//灰色按钮
+//----------------------------------------
+.btnGray{
+  .size(@btnWidth,@btnHeight);
+  line-height: @btnLineHeight;
+  cursor: pointer;
+  font-size:@btnFontSize;
+  display: inline-block;
+  text-align:center;
+  background-color: @btnGrayGradientStart;
+  background-repeat: no-repeat;
+  .setGradient(@btnGrayGradientStart, @btnGrayGradientEnd);
+  color: #4a4a4a;
+  border: .1em solid #cfcfcf;
+  border-bottom-color: #bbb;
+  .borderRadius();
+  .boxShadow();
+  .transition();
+
+ &:hover{.btnGrayHover();}
+ &:active{.btnGrayActive();}
+}
+
+//灰色按钮:hover
+.btnGrayHover() {
+  .setHoverActiveGradient(@btnGrayHoverGradientStart, @btnGrayHoverGradientEnd);
+}
+
+//灰色按钮:active
+.btnGrayActive() {
+  .setHoverActiveGradient(@btnGrayActiveGradientStart, @btnGrayActiveGradientEnd);
+  .boxShadowActive();
+}
+
+
+//蓝色按钮
+// -------------------------------
+.btnBlue{
+  .size(@btnWidth,@btnHeight);
+  line-height: @btnLineHeight;
+  cursor: pointer;
+  font-size:@btnFontSize;
+  display: inline-block;
+  text-align:center;
+  background-color: @btnBlueGradientStart;
+  background-repeat: no-repeat;
+  .setGradient(@btnBlueGradientStart, @btnBlueGradientEnd);
+  color: #EDF6FC;
+  border: .1em solid #0068B8;
+  border-bottom-color: #014f8a;
+  .borderRadius();
+  .boxShadow();
+  .transition();
+
+ &:hover{.btnBlueHover();}
+ &:active{.btnBlueActive();}
+}
+
+//蓝色按钮:hover
+.btnBlueHover() {
+  .setHoverActiveGradient(@btnBlueHoverGradientStart, @btnBlueHoverGradientEnd);
+}
+
+//蓝色按钮:active
+.btnBlueActive() {
+  .setHoverActiveGradient(@btnBlueActiveGradientStart, @btnBlueActiveGradientEnd);
+  .boxShadowActive();
+}
+
+
+//红色按钮
+// -------------------------------
+.btnRed{
+  .size(@btnWidth,@btnHeight);
+  line-height: @btnLineHeight;
+  cursor: pointer;
+  font-size:@btnFontSize;
+  display: inline-block;
+  text-align:center;
+  background-color: @btnRedGradientStart;
+  background-repeat: no-repeat;
+  .setGradient(@btnRedGradientStart, @btnRedGradientEnd);
+  color: #EDF6FC;
+  border: .1em solid #B80000;
+  border-bottom-color: #8A0101;
+  .borderRadius();
+  .boxShadow();
+  .transition();
+
+ &:hover{.btnRedHover();}
+ &:active{.btnRedActive();}
+}
+
+//蓝色按钮:hover
+.btnRedHover() {
+  .setHoverActiveGradient(@btnRedHoverGradientStart, @btnRedHoverGradientEnd);
+}
+
+//蓝色按钮:active
+.btnRedActive() {
+  .setHoverActiveGradient(@btnRedActiveGradientStart, @btnRedActiveGradientEnd);
+  .boxShadowActive();
+}

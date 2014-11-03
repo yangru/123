@@ -1,0 +1,157 @@
+/* default dimensions and justification for each month including title */
+.jCal {
+	/* each day width + border-left + border-right */
+	width:224px;
+	height:21px;
+	text-align:center;
+	vertical-align:top;
+	background: url(images/datepicker/title.png);
+}
+/* default dimensions and justification for each month not including title */
+.jCalMo{
+	width:224px;
+	float:left;
+	overflow:visible;
+	height:100%;
+	padding-right:2px;
+	padding-left:2px;
+	white-space:nowrap;
+	text-align: center;  
+	border: none;  
+	background: #EDEDED; 
+	font-weight: bold;
+	box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, .3);
+}
+/* top month display block - i.e. January */
+.jCal .month, .jCal .monthSelect, .jCal .monthName, .jCal .monthYear {
+	line-height:21px;
+	height:21px;
+	text-align:center;
+	vertical-align:bottom;
+	font-family:Tahoma;
+	font-size:12px;
+	color:white;
+	cursor:pointer;
+	float:left;
+}
+/* month name per calendar style - includes left/right padding and alignment */
+.jCal .monthName {
+	padding-left:2px;
+	padding-right:2px; 
+	text-align:right;
+}
+/* year per calendar style - includes left/right padding and alignment */
+.jCal .monthYear {
+	float:right;
+	padding-left:2px;
+	padding-right:2px;
+	text-align:left;
+}
+/* hilight style for new month combobox pulldown for hover */
+.jCal .monthSelect {
+	background: url(images/datepicker/title.png) no-repeat;
+	line-height: 16px;  
+	height: 16px;
+}
+/* do not edit - this enables the new month combobox selector */
+.jCal .monthSelector {
+	position:absolute;
+}
+/* do not edit - this enables the new month combobox selector "shadow" for capturing auto-hide */
+.jCal .monthSelectorShadow {
+	position:absolute;
+	background:#808080;
+	padding:0px;
+}
+/* this is the hover for the month name */
+.jCal .monthNameHover {
+	color:#808080;
+}
+/* this is the hover for the year */
+.jCal .monthYearHover {
+	color:#808080;
+}
+/* this is the hover for the new month or year hover in the new combobox selection */
+.jCal .monthSelectHover {
+	background:#069;
+	color:#FFF;
+}
+/* day block dimensions and style - for all day blocks */
+.jCalMo .dow, .jCalMo .day, .jCalMo .pday, .jCalMo .aday, .jCalMo .overDay, .jCalMo .invday, .jCalMo .selectedDay {
+	width:30px;
+	font-family:Tahoma;
+	font-size:12px;
+	color:#666;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	border-left:1px solid #EEE;
+	text-align:center;
+	cursor:default;
+	float:left;
+}
+/* day of week header specific style */
+.jCalMo .dow {
+	border: none;
+	border-bottom: 1px solid #DDD;
+	width: 32px;
+}
+/* actual calendar day default style */
+.jCalMo .day, .jCalMo .invday {
+	height:30px;
+	text-align:center;
+	line-height: 30px;
+}
+/* selectable calendar day specific style */
+.jCalMo .day {
+	cursor:pointer;    
+	line-height: 29px;  
+	border-left: 1px solid white;  
+	border-top: 1px solid white;
+}
+/* blacked-out calendar day specific style */
+.jCalMo .invday {
+	color: #CCC;
+	background: url(images/datepicker/white.png) no-repeat;
+	height: 31px;
+	line-height: 31px;
+}
+/* previous and subsequent months calendar day specific style */
+.jCalMo .pday, .jCalMo .aday {
+	height:31px;
+	background: url(images/datepicker/white.png) no-repeat;
+	color: #CCC;
+	line-height: 31px;
+}
+/* selected day */
+.jCalMo .selectedDay {
+	color:#FFF;
+	/* must use rgb() syntax for jquery.color.js compliance */
+	background:#379ED7;
+}
+/* mouseover hilighted selectable day */
+.jCalMo .overDay {
+	/* must use rgb() syntax for jquery.color.js compliance */
+	background:#ff9a45;
+}
+/* left month navigation button - no need to change */
+.jCal .left {
+	background: url(images/datepicker/jiao.png) 2px 2px no-repeat;
+	width: 16px;
+	height: 21px;
+	vertical-align:middle;
+	cursor:pointer;
+	float:left;
+}
+/* right month navigation button - no need to change */
+.jCal .right {
+	background: url(images/datepicker/jiao.png) -179px 2px no-repeat;
+	width:16px;
+	height: 21px;
+	vertical-align:middle;
+	cursor:pointer;
+	float:right;
+}
+/* no need to change - this is for carousel opacity */
+.jCalMask, .jCalMove {
+	position:absolute;
+}

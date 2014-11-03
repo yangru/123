@@ -1,0 +1,36 @@
+@import "http://clicki.pro/resources/styles/clicki.web.less";//先引入的整体样式
+
+
+//当前页面的样式
+
+.wrap{margin:20px;padding:20px;background:@white;}
+.G-theWidescreen {
+   a {color: @linkColor;text-decoration: none;
+    &:hover {color: @linkColorHover;}
+   }
+}
+
+.cc2{border:1px solid #efefef;.borderRadius;.boxShadow;}
+
+.input,.textarea{.istBox;}
+.textarea{.size(350px, 300px);}
+
+.warningBox,.successBox,.errorBox{.size(95%, 30px); line-height:30px;}
+
+
+li, ul, ol, dl, dd, dt {margin: 0;list-style-type: none;padding: 0;text-indent: 0;}
+
+li {line-height: 18px;color: gray;}
+
+.liveList li {height: 35px;overflow: hidden;border-top: 1px solid #F0F0F0;margin: -1px 0 0;cursor: pointer;
+
+  &:hover{.beSelected;}
+  em:hover{.beSelectedEm;}
+
+}
+
+.liveList li p{border-top:2px solid #FFF;border-bottom:1px solid #FFF;height:32px;line-height:32px;padding-left:17px;position:relative;margin:-1px 0 0;}
+.liveList em{float:right;background-color:#B4B4B4;display:inline;line-height:13px;color:#FFF;_width:16px;min-width:16px;text-align:center;border-radius:3px;margin:6px 15px 0 0;padding:.3em;}
+
+.grid-page{.gridPage;}
+

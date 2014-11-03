@@ -1,0 +1,149 @@
+//livebox整体
+//位于访问概况
+//2012/7/30 11:54:09
+//------------------------------------
+.Ex_livebox {
+	overflow:hidden;
+	margin:10px 0 10px -2px;
+	padding:0 0 0 2px;
+	.clearfix;
+
+	//指标方框
+	//----------------------------------------
+	.Ex_theSourcesBox {
+		.fl;
+		display:inline;
+		.border(3px,solid,#e2e1e1);
+		width:170px;
+		.borderRadius(8px);
+		background:#fdfdfd url(images/sourceBg_03.jpg) bottom repeat-x;
+		.transition(.3s,ease-in-out,all);
+		margin:0 2px;
+		padding:9px;
+
+		strong {
+			font-size:30px;
+			font-weight:400;
+			color:#404141;
+			font-family:arial;
+			margin:0 5px 0 0;
+		}
+
+		span {
+			font-size:@baseFontSize;
+			color:@grayLight;
+		}
+
+		em {
+			color:#6e6e6e;
+			font-style:normal;
+		}
+
+		ul {
+			background:url(images/smallBg_03.png) 0 0 no-repeat;
+			_background:url(images/blank.gif) 0 0 no-repeat;
+			_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/resources/styles/images/smallBg_03.png",sizingMethod="scale");
+			.size(149px,85px);
+			font-family:Arial;
+			padding:11px 8px;
+			.clearfix;
+			li {
+				margin:5px 0;
+
+				span {
+					.fr;
+					display:inline;
+					.tr;
+					margin:0 2px 0 0;
+				}
+
+				em {
+					.fl;
+					display:inline;
+					font-size:18px;
+					color:#353535;
+					margin:0 3px 0 0;
+				}
+
+				.Ex_sbSmallBar {
+					.cl;
+					.fl;
+					.size(100%,5px);
+					margin:5px 0;
+					background:@dropdownDividerTop;
+					font-size:0;
+					line-height:0;
+					position:relative;
+
+					div {
+						background:@green;
+						border-right:2px solid #4a9104;
+						font-size:0;
+						line-height:0;
+						.size(0,5px);
+					}
+
+					b {
+						position:absolute;
+						left:0;
+						top:-3px;
+						.size(5px,13px);
+						overflow:hidden;
+						background:url(images/bar_avg_07.gif) 0 0 no-repeat;
+					}
+				} //.Ex_sbSmallBar
+			} //li
+		} //ul
+
+		//次数展示
+		//-------------------------------------------
+		.Ex_bigNum {
+			.tr;
+		}
+
+		//展示框标题
+		//---------------------------
+		.Ex_sbTitle {
+			font-size:@baseFontSize;
+			color:#636262;
+			line-height:1em;
+			margin:0 0 10px;
+		}
+
+		.Ex_sbBigBar {
+			font-size:0;
+			line-height:0;
+			.size(166px,5px);
+			overflow:hidden;
+			background:url(images/barbg_03.gif) 0 0 no-repeat;
+			margin:8px 0;
+
+			div {
+				font-size:0;
+				line-height:0;
+				.size(0,5px);
+				overflow:hidden;
+				background:url(images/barbg_f_03.gif) 0 0 no-repeat;
+				margin:0;
+			}
+		}
+
+	} //.Ex_theSourcesBox
+
+	//展示框鼠标滑过效果
+	//---------------------------------------
+	.Ex_sbBoxHover {
+		.border(3px,solid,#58c2ea);	
+	}
+
+	.Ex_sbBoxUpdate {
+		background:#faf8ec url(images/sourceBg_on_03.jpg) bottom repeat-x;
+		.border(3px,solid,#e2e1e1);
+
+		ul {
+			background:url(images/smallBg_on_03.png) 0 0 no-repeat;
+			_background:url(images/blank.gif) 0 0 no-repeat;
+			_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/resources/styles/images/smallBg_on_03.png",sizingMethod="scale");
+		}
+	} //.Ex_sbBoxUpdate
+}

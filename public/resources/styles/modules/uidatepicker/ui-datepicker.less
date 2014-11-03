@@ -1,0 +1,143 @@
+//ui-datepicker
+//位于datepicker以及behavior
+//from clicki.datepicker.css
+//2012/7/31 11:58:21
+//--------------------------------------
+.ui-datepicker {
+    font-size: 12px;
+    .tc;
+    border: none;
+    background: #ededed;
+    box-shadow: rgba(0, 0, 0, .3) 0 .3em .5em;
+    font-weight: @headingsFontWeight;
+    font-family: Arial, Helvetica, sans-serif;
+    a {
+        &:hover {
+            color: @white;
+        }
+    }
+}
+
+.ui-datepicker-header {
+    .size(216px,35px);
+    background: url(images/datepicker/title.png) no-repeat;
+    color: @white;
+    line-height: 35px;
+    .ui-datepicker-prev {
+        .fl;
+        display: inline-block;
+        margin-left: 5px;
+        background: url(images/datepicker/jiao.png) 2px 8px no-repeat;
+        .size(14px,35px);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .ui-datepicker-title {
+        .tc;
+    }
+    .ui-datepicker-next {
+        .fr;
+        display: inline-block;
+        margin-right: 5px;
+        .ui-icon {
+            display: block;
+            background: url(images/datepicker/jiao.png) -179px 8px no-repeat;
+            .size(14px,35px);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    a {
+        color: @white;
+    }
+}
+
+.ui-datepicker-calendar {
+    width: 212px;
+    z-index: 999;
+    font-size: 12px;
+    border-collapse: collapse;
+    a {
+        color: #666;
+    }
+    thead {
+        .size(212px,21px);
+        font-size: 9px;
+        tr {
+            .tc;
+            border: none;
+            border-bottom: 1px solid #bbb;
+            th {
+                border: none;
+                line-height: 21px;
+                height: 21px;
+                .tc;
+            }
+        }
+    }
+    tbody {
+        tr {
+            .tc;
+            border: none;
+            border-bottom: 1px solid #bbb;
+            td {
+                color: #666;
+                .tc;
+                .size(29px,29px);
+                line-height: 29px;
+                border: none;
+                border-left: 1px solid #bbb;
+                &:first-child {
+                    border: none;
+                }
+                .ui-state-default {
+                    display: inline-block;
+                    .size(29px,29px);
+                    line-height: 29px;
+                    border-left: 1px solid @white;
+                    border-top: 1px solid @white;
+                }
+                &.ui-state-disabled {
+                    background: url(images/datepicker/gay.png) no-repeat;
+                    color: #b4b3b3;
+                    .ui-state-default {
+                        color: #bbb;
+                    }
+                }
+                &.ui-datepicker-calendar {
+                    background: #E9E9E9;
+                }
+                &.ui-datepicker-other-month {
+                    border-left: 1px solid #e0e0e0;
+                    background: url(images/datepicker/white.png) no-repeat;
+                }
+                &.ui-datepicker-calendar {
+                    background: #E9E9E9;
+                }
+                .ui-state-hover {
+                    background: #fbfbfb;
+                    color: #4f4e4e;
+                    .size(29px,29px);
+                    height: 29px;
+                    width: 29px;
+                    line-height: 29px;
+                    display: inline-block;
+                }
+                .ui-state-active {
+                    background: url(images/datepicker/blue.png) no-repeat;
+                    border: none;
+                    .size(30px,30px);
+                    color: #e0e0e0;
+                }
+                a {
+                    &:hover {
+                        background: #fbfbfb;
+                        color: #4f4e4e;
+                    }
+                }
+            }
+        }
+    }
+}

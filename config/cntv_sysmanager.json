@@ -1,0 +1,52 @@
+{
+	"#common": "配置文件",
+        "name" : "cntv_sysmanager",
+        "app": {
+            "version_type": 2,
+                "yii_debug": true,
+                "dbtype": "mysql",
+                "mysql": {
+                        "host": "10.70.33.26",
+                        "port": 3324,
+                        "database": "sys_manager",
+                        "username": "sysmanager",
+                        "password": "sysmanager@cntv.0911"
+                },
+                "mysql_read": {
+                        "host": "",
+                        "port": 11211
+                },
+                "mongodb": {
+                        "host": "10.70.33.73",
+                        "port": "27017",
+                        "db_name": "cntv"
+                },
+                "memcache": {
+                        "host": "data.t.cntv.cn",
+                        "port": 11211
+                },
+
+                "mysql_cntv_uc": {
+                        "host": "10.70.33.26",
+                        "port": 3318,
+                        "database": "cntv_uc",
+                        "username": "cntv_user",
+                        "password": "user@cntv.0911"
+                }
+
+
+        },
+        "module_log" : {
+                "host" : "10.70.36.163",
+                "port" : "1463"
+        },
+        "algorithm_server" : {
+                "video" : "10.70.36.160:8001,10.70.36.161:8001,10.70.36.162:8001,10.70.36.163:8001,10.70.36.164:8001",
+                "weibo_user" : "10.70.36.160:8001,10.70.36.161:8001,10.70.36.162:8001,10.70.36.163:8001,10.70.36.164:8001",
+                "weibo_content" : "10.70.36.160:8001,10.70.36.161:8001,10.70.36.162:8001,10.70.36.163:8001,10.70.36.164:8001"
+        },
+        "algorithm_time_out" : 30000,
+        "api_server" : "http://10.70.36.162/index.php",
+        "manual_recomm" : 259200000,
+        "vms_server": "http://10.72.0.203/interface/vms.php"
+}

@@ -1,0 +1,51 @@
+//grid的 标题 和 分页跳转
+//-----------------------------------
+.gridPage {
+  display:block;
+  padding:4px 1px;
+  
+  input {
+   width:24px;
+   color: #717171;
+   border: 1px solid #cacaca;
+   padding: .3em .5em;
+   margin: 0 .3em;
+   font-family:HelveticaNeue,Arial;
+   font-size:@baseFontSize;
+  }
+
+  span{color:#B5B5B5; margin-right:1em;}
+
+  a {
+   color: #717171;
+   text-decoration: none;
+   cursor:pointer;
+   border: 1px solid #cacaca;
+   padding: .3em .5em;
+   margin: 0 .3em;
+   .borderRadius(.3em);
+   background:@grayLighter;
+   background:-moz-linear-gradient(top, #f9f9f9, @grayLighter 100%);
+   background:-webkit-gradient(linear,0% 0,0% 100%,from(#f9f9f9),to(@grayLighter));
+   font-family:HelveticaNeue,Arial;
+   font-size:@baseFontSize;
+
+   &:hover {background:@white;}
+  
+   &.act {
+    color:@white;
+    background:#606060;
+    border: 1px solid #333;
+   }
+  }
+}
+
+.gridPopbox { 
+  position:absolute;
+  top:-1000em;
+  left:-1000em;
+  background-color:rgba(238,239,241,0.9);
+  background-image:url("/resources/images/loading.gif");
+  background-repeat:no-repeat;
+  background-position:50% 50%; 
+}

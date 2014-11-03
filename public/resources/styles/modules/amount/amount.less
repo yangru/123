@@ -1,0 +1,60 @@
+//表格上方量化指标
+//------------------------------------------------
+.amount{
+  clear:both;
+  border-left: 1px solid #C9CCCB;
+  border-right: 1px solid #C9CCCB;
+  border-top: 3px solid #848484;
+  overflow: auto;
+  overflow-y: hidden;
+  color: #545454;
+  background: @white;
+  .setGradient(@white, #F7F7F7);
+
+  .hidden{
+    display: none;
+  }
+
+  ul{
+    overflow: hidden;
+
+    &:after {
+      content:"."; 
+      display:block; 
+      clear:both; 
+      visibility:hidden; 
+      height:0;
+    }
+
+    li{
+      position: relative;
+      float: left;
+      display: inline;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px;
+      .size(98px, 40px);
+      border-left: 1px solid #C9CCCB;
+
+      em{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        .size(15px, 15px);
+        background: url(images/icons_grid.png) no-repeat;
+        _background: url(images/icons_grid.gif) no-repeat;
+        background-position: -30px -423px;
+      }
+
+      span{
+        font-weight: normal;
+        font-size: @baseFontSize;
+        display: block;
+        color: #A3A3A3;
+        margin: 0 0 4px;
+        text-align: center;
+      }
+    } //li
+  } //ul
+} //amount

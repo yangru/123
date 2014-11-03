@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="att-project" description="att-project-description" default="build" basedir=".">
+
+    <target name="less">
+        <less from="newCss.less" to="newCss.css"/>
+    </target>
+
+    <target name="build" depends="less">
+    </target>
+
+</project>

@@ -1,0 +1,134 @@
+.Ex_theAdvFilter a,
+.Ex_theAdvFilter span,
+.Ex_theFilterCtrl input,
+.Ex_filterSubmit,
+.Ex_filterOk,
+.Ex_theFilterCtrl input:active,
+.Ex_filterSubmit:active,
+.Ex_filterOk,
+.Ex_changeOptions,
+.okgo .okBtn,
+.Ex_behavior .okgo .okBtn
+{ background-image: url(images/advfliter.png); _background-image: url(images/advfliter.gif); }
+
+.theRegArea .apply_reg,
+.theRegArea .apply_reg:hover
+{ background-image: url(images/apply_account.png); }
+
+.loginSubmitBnt .apply_submit,
+.loginSubmitBnt .apply_submit:hover
+{ background-image: url(images/apply_bg.png); }
+
+.G-tableSet .theTableBox .currentOnline .gridContentBody div .new,
+.G-tableSet .theTableBox .currentOnline .gridContentBody div .show
+{ background-image: url(images/currentonline.png); }
+
+.saveAndCode,
+.editSite,
+.backPathList,
+.pathAddCtrl,
+.backlatsetList,
+.latsetAddCtrl,
+.latitude .list,
+.latitude .set,
+.latNavOneIcon,
+.latNavTwoIconF,
+.latNavTwoIconT,
+.nextLat .nextLatSet,
+.saveSet,
+.channelAddCtrl,
+.channelGridCtrl,
+.channelListCtrl,
+.statsDel,
+.filterDel,
+.statsAdd,
+.filterAdd,
+/*.theDiggCtrl .diggBtn,*/
+/*.theDiggCtrl .saveBtn,*/
+.backDiggList,
+.diggAddCtrl,
+.theDiggIndex em,
+.theDiggLine em,
+.cancelLayer b,
+.reDiggInner b,
+.adSetBtn,
+.login_lead em,
+.G-tabBox .tabBnt .addTab
+{ background-image: url(images/customIcon.png); _background-image: url(images/customIcon.gif); }
+
+.theGridPopFilter .cancleGridFilter,
+.theGridPopFilter .doGridFilter,
+.theReserveFilter .cancleGridFilter,
+.theReserveFilter .doGridFilter
+{ background-image: url(images/gridFilterBnts.gif); }
+
+.hasHeatmap
+{ background-image: url(images/heat.png); }
+
+.Ex_export,
+.Ex_export:hover,
+.gridExport,
+.G-tableSet .theTableBox .theGridMainContentBox .export,
+.G-tableSet .theTableBox .theGridMainContentBox .export:hover
+{ background-image: url(images/icons_grid.png); _background-image: url(images/icons_grid.gif); }
+
+.setpasswordSubmitBnt .setpassword_submit,
+.setpasswordSubmitBnt .setpassword_submit:hover,
+.theLoginBox .theRegArea .login_reg,
+.theLoginBox .theRegArea .login_reg:hover,
+.theLoginBox .loginSubmitBnt .login_submit,
+.theLoginBox .loginSubmitBnt .login_submit:hover,
+.theRegArea .reg_login,
+.theRegArea .reg_login:hover,
+.loginSubmitBnt .reg_submit,
+.loginSubmitBnt .reg_submit:hover,
+.loginSubmitBnt .forgot_submit,
+.loginSubmitBnt .forgot_submit:hover,
+.theRegArea .setpassword_login,
+.theRegArea .setpassword_login:hover,
+.loginSubmitBnt .setpassword_submit,
+.loginSubmitBnt .setpassword_submit:hover
+{ background-image: url(images/login_bg.png); }
+
+.theRegArea .forgot_login,
+.theRegArea .forgot_login:hover
+{ background-image: url(images/login_btn.png); }
+
+.login_lead
+{ background-image: url(images/loginSuccess.png); }
+
+.recommBox input
+{ background-image: url(images/selectTo_03.gif); }
+
+.G-tableSet .theTableBox .sitelistTable .ty .today,
+.G-tableSet .theTableBox .sitelistTable .ty .yestoday
+{ background-image: url(images/sitelist.gif); }
+
+.siteAddBtn,
+.Ex_button,
+.G-setSite,
+.G-getReport,
+.G-getCode,
+/*.siteNavName a:link,
+.siteNavName a:visited,
+.siteNavName a:hover,
+.siteNavName a:active,*/
+.setSeachInput,
+.siteList .inArea .siteSearch,
+.search .setSeachInput
+{ background-image: url(images/sitelist.png); }
+
+
+.G-imNav strong
+{ font-size: 12px; margin: 5px 8px 5px 0; }
+
+.G-imNav li a
+{ padding: 5px 0 5px 20px; font-size: 11px; }
+
+body.lang_en_US, .lang_en_US .G-imNav li a {
+	font-family: Arial;
+}
+
+.adminRoleHeightCtrl {
+	width: 75px;
+}

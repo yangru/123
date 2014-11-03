@@ -1,0 +1,17 @@
+{
+    "datas":[
+        {"date":"今天", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"昨天", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"昨日此时", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"每日平均", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"历史最高", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"历史累计", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"今天", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"昨天", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"昨日此时", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"每日平均", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"历史最高", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"},
+        {"date":"历史累计", "pv":"12", "ip":"12", "uv":"12", "backview":"100%","speed":"10","stay":"34","jump":"36%","quality":"100"}
+    ]
+}
+

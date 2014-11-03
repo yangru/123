@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@import "clicki.web.css";
+@import "clicki.innerpage.css";
+
+
+html, body {
+	min-width: 100%;
+}
+body {
+	background: #fff;
+	text-align: left;
+}

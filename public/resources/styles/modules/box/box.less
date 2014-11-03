@@ -1,0 +1,120 @@
+//Box
+//位于访问概括和实时统计
+//2012/7/30 11:56:21
+//2012/7/31 10:33:18
+//--------------------------------------
+//.boxshadow() .gradient()
+.G-outterBox {
+	margin:20px 0;
+	.clearfix;
+	.boxContent {
+	 	margin:0;
+	 	padding-top: 0;
+ 	}
+ 	.boxTitle {
+ 		font-size:14px;
+ 		position:absolute;
+ 		top:12px;
+ 		left:10px;
+ 	}
+}
+.G-relative {
+	position:relative;
+}
+ .leftTable{
+ 	.fl;
+ 	width:49%; 
+ 	clear:left;
+ }
+ .rightTable{
+ 	.fr;
+ 	width:49%; 
+ 	clear:right;
+ }
+
+ div.generalTabBox {
+ 	// .border(1px,solid,#cacccc);
+ 	height:390px;
+ 	border: none;
+ 	background: #fafafa;
+ 	.tabBnt {
+ 		padding:8px 8px 0;
+ 		// border:none;
+ 		border-bottom: 3px solid;
+ 		height: 32px;
+ 		background: #fff;
+ 		li,li:hover {
+			.fr;
+			background-color: #e6e6e6;
+			background-repeat: no-repeat;
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+			background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+			background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+			background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+			background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+			background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr ='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+			/* padding: 3px 8px 4px;*/
+			text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+			color: #333;
+			font-size: @baseFontSize;
+			line-height: normal;
+			.border(.1em,solid,#ccc);
+			border-bottom-color: #bbb;
+			.borderRadius();
+			padding:.3em .7em;
+			-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+			-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+			.transition();
+			min-width:0;
+ 		}
+ 		li.act {
+			background-color:@tableGradientEnd;
+			margin-bottom:0;
+			border-bottom:.1em solid #ccc;
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EFEFEF), color-stop(25%, #EFEFEF), to(#f2f2f2));
+			background-image: -webkit-linear-gradient(#EFEFEF, #EFEFEF 25%, #f2f2f2);
+			background-image: -moz-linear-gradient(top, #EFEFEF, #EFEFEF 25%, #f2f2f2);
+			background-image: -ms-linear-gradient(#EFEFEF, #EFEFEF 25%, #f2f2f2);
+			background-image: -o-linear-gradient(#EFEFEF, #EFEFEF 25%, #f2f2f2);
+			background-image: linear-gradient(#EFEFEF, #EFEFEF 25%, #f2f2f2);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#f2f2f2', GradientType=0);
+ 		}
+ 	}
+ 	.innerTabBox {
+ 		padding:0;
+ 	}
+ 	.tabBox {
+ 		border: none;
+ 		background: #fafafa;
+ 	}
+ 	.theGeneralMore {
+ 		.tr;
+ 		padding:.5em 1em .4em;
+ 	}
+ }
+#theReturning, #theReturningPage, #theReturningTime{
+	height:330px;
+}
+.theGeneralNoData {
+	.pd10();
+	font-size:@baseLineHeight;
+}
+.threeBox {
+	.left{
+		display:inline;
+		.fl;
+	}
+	.right {
+		.fr;
+	}
+	.mid {
+		display:inline;
+		.fl;
+		margin:0 0 0 20px;
+	}
+	.left,.mid,.right {
+		width:32%;
+	}
+}

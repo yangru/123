@@ -1,0 +1,206 @@
+//channel受访频道
+//位于受访列表的受访频道的添加频道
+//2012/7/30 11:43:16
+//2012/7/31 11:16:35
+//--------------------------------------
+//gray btn?
+.channelSet {
+    .gridViewTableContent {
+        width: 100% !important;
+        td {
+            height: 40px;
+        }
+        th {
+            height: 40px;
+        }
+    }
+}
+
+.channelAddCtrl {
+    padding: 0px 5px;
+    .fr;
+    display: block;
+    cursor: pointer;
+    .size(93px,30px);
+    background: url(images/customIcon.png) no-repeat -582px -12px;
+    _background: url(images/customIcon.gif) no-repeat -582px -12px;
+    &:hover {
+        background-position: -582px -52px;
+    }
+    &:active {
+        background-position: -582px -94px;
+    }
+}
+
+.channelGridCtrl {
+    .fr;
+    display: block;
+    cursor: pointer;
+    .size(79px,29px);
+    background: url(images/customIcon.png) no-repeat -18px -13px;
+    _background: url(images/customIcon.gif) no-repeat -18px -13px;
+    &:hover {
+        background-position: -19px -55px;
+    }
+    &:active {
+        background-position: -19px -99px;
+    }
+}
+
+.channelListCtrl {
+    padding: 0;
+    .fr;
+    display: block;
+    cursor: pointer;
+    .size(79px,29px);
+    background: url(images/customIcon.png) no-repeat -585px -138px;
+    _background: url(images/customIcon.gif) no-repeat -585px -138px;
+    &:hover {
+        background-position: -585px -180px;
+    }
+    &:active {
+        background-position: -585px -224px;
+    }
+}
+
+.channelCtrl {
+    .size(auto,30px);
+    padding: 10px 0;
+    .clearfix;
+}
+
+.channelName, .channelStats, .channelFilter {
+    h3 {
+        margin: 5px 0px;
+        font-size: 14px;
+        font-weight: normal;
+        display: inline;
+    }
+}
+
+.channelStats, .channelFilter {
+    .mt20;
+    .size(260px,auto);
+}
+
+.statsDel, .filterDel {
+    padding: 4px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    display: block;
+    cursor: pointer;
+    .size(6px,6px);
+    background: url(images/customIcon.png) no-repeat -343px -233px;
+    _background: url(images/customIcon.gif) no-repeat -343px -233px;
+    &:hover {
+        background-position: -360px -233px;
+    }
+}
+
+.statsAdd, .filterAdd {
+    margin-top: 5px;
+    cursor: pointer;
+    .size(16px,16px);
+    background: url(images/customIcon.png) no-repeat -326px -248px;
+    _background: url(images/customIcon.gif) no-repeat -326px -248px;
+    &:hover {
+        background-position: -349px -248px;
+    }
+}
+
+.channelName input, .channelStats ul input, .channelFilter ul input {
+    line-height: 15px;
+    .transition(0.1s,ease-in-out,all);
+    .border(1px,solid,#d1d1d1);
+    outline: none;
+    .size(250px,15px);
+    .borderRadius();
+    margin: 0px;
+}
+
+.readonly {
+    background: #fff9ea;
+}
+
+.channelName, .channelStats, .channelFilter {
+    ul {
+        input {
+            &:active {
+                background-color: #fefcf4;
+            }
+        }
+    }
+}
+
+.channelStats, .channelFilter {
+    ul {
+        li {
+            margin-top: 5px;
+            position: relative;
+        }
+    }
+}
+
+.ChannelSave {
+    .mt20;
+}
+
+.channelExplain {
+    width: 350px;
+    position: absolute;
+    left: 350px;
+    top: 80px;
+    .border(1px, dotted, red);
+    padding: 15px;
+    .borderRadius(5px);
+    background-color: #FBF6DB;
+    color: #5f5f5f;
+}
+
+.addReportUrlPop {
+    input {
+        width: 225px;
+        margin-bottom: 15px;
+    }
+}
+
+.filterAdsAndSe {
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 442px;
+    label {
+        margin-left: 10px;
+    }
+}
+
+.Ex_popTreeList {
+    position: absolute;
+    top: -99999em;
+    left: -99999em;
+    background: #6b6b6b;
+    .border(1px,solid,#5a5a5a);
+    .borderRadius(10px);
+}
+
+.Ex_popTreeListInner {
+    li {
+        color: @white;
+        cursor: pointer;
+        padding-left: 17px;
+        height: 30px;
+        line-height: 30px;
+        border-top: 1px solid #7b7b7b;
+        border-bottom: 1px solid #5a5a5a;
+    }
+}
+
+.Ex_popTreeListInner {
+    .first {
+        border-top: none;
+    }
+    .last {
+        border-bottom: none;
+    }
+}

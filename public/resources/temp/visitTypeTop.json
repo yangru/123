@@ -1,0 +1,9 @@
+{
+    "datas":[
+        {"text":"总访问量","region":"1", "PV|IP":"1"},
+        {"text":"直接输入网址","region":"1", "PV|IP":"1"},
+        {"text":"来自搜索引擎","region":"1", "PV|IP":"1"},
+        {"text":"来自其他网站","region":"1", "PV|IP":"1"}
+    ]
+}
+

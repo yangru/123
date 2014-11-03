@@ -1,0 +1,33 @@
+{
+	"success":true,
+	"result":{
+		"items":{
+			"rows":[
+				{
+					"text":"首页",
+					"type":"direct"
+					
+				},
+				{
+					"text":"登陆",
+					"type":"ad"
+				}
+			],
+			"columns":[
+				{
+					"url":null
+				},
+				{
+					"text":"直接访问",
+					"url":"http://www.clicki.cn"
+				},
+				{
+					"text":"广告",
+					"url":"/"
+				}
+			],
+			"title":"测试报告",
+			"sub_title":"这里是一个测试报告的副标题"
+		}
+	}
+}

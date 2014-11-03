@@ -1,0 +1,37 @@
+GeoIP + miaozhen + clicki数据导入
+
+步骤:
+* 创建conf_location (schame.sql)
+* 创建conf_ip表 (schame.sql)
+* 将GeoLiteCity-Location.csv导入conf_location(schame.sql)
+* 将GeoLiteCity-Blocks.csv导入conf_ip (schame.sql)
+* 根据geoip的country_code->country_name对应表写入country_name;
+* 根据geoip的region_code->region_name对应表写入region_name;
+* 将clicki原来地域配置PHP文件中的country/region编码导入conf_location表, 根据name字段进行合并
+* 填充剩余的country/region/city字段
+* 将miaozhen数据导入conf_ip, 对于冲突的ip段, 先删除原来数据的ip记录, 再写入miaozhen记录, 写入时在conf_geo表中查询对应的location_id
+
+GeoLiteCity-Location.csv字段格式:
+* Location ID
+* Country Code
+* State/Region (Region name is available through an external lookup)
+* City Name
+* Postal Code (US only)
+* Latitude
+* Longitude
+* Metro Code
+* Area Code
+
+GeoLiteCity-Blocks字段格式:
+* Start IP Number
+* End IP Number
+* Location ID
+
+miaozhen字段格式:
+* Start IP
+* End IP
+* Start IP Number
+* End IP Number
+* 省份
+* 城市
+

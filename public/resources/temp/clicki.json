@@ -1,0 +1,71 @@
+{
+"title": { "text": "\u6700\u8fd124+3\u5c0f\u65f6\u6d41\u91cf?"},
+"bg_colour": "#FFFFFF",
+"y_axis": { "min": 0, "max": 77, "steps": 13, "colour": "#D6D7D4", "tick-length": 2, "stroke": 1, "grid-colour": "#EBEBEB" },
+"x_axis": {
+    "colour": "#D6D7D4",
+    "grid-colour": "#EBEBEB",
+    "stroke": 1,
+    "tick-height": 2,
+    "labels": {
+        "steps": 2,
+        "labels": [ "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00" ]
+    }
+},
+"elements":
+[
+    {
+        "type": "area",
+        "dot-style": {
+            "type": "solid-dot",
+            "dot-size": 4,
+            "halo-size": 1,
+            "colour": "#0C73C2",
+            "tip": "PV:#val##x_label#"
+        },
+        "values": [ 18, 14, 1, 50, 8, 14, 3, 1, 6, 51, 64, 49, 5, 4, 2, 11, 4, 1, 4, 7, 13, 25, 18, 40, 5, 29, 9 ],
+        "width": 2,
+        "text": "PV",
+        "font-size": 10,
+        "colour": "#0C73C2",
+        "fill": "#BFE7FF",
+        "fill-alpha": 0.4
+    }, {
+    "type": "line",
+    "values": [ 12, 9, 1, 48, 7, 13, 3, 1, 5, 41, 57, 42, 5, 4, 2, 11, 3, 1, 4, 7, 11, 21, 17, 35, 5, 24, 8 ],
+    "dot-style": {
+        "type": "solid-dot",
+        "dot-size": 3,
+        "halo-size": 1,
+        "colour": "#89BB24",
+        "tip": "UV:#val##x_label#"
+    },
+    "width": 2,
+    "text": "UV",
+    "font-size": 10,
+    "colour": "#89BB24"
+}, {
+    "type": "line",
+    "values": [ 5, 1, 1, 5, 5, 2, 2, 1, 3, 11, 3, 7, 3, 3, 2, 1, 1, 1, 3, 5, 6, 6, 3, 7, 2, 7, 1 ],
+    "dot-style": {
+        "type": "solid-dot",
+        "dot-size": 2,
+        "halo-size": 1,
+        "colour": "#EA0036",
+        "tip": "IP:#val##x_label#"
+    },
+    "width": 1,
+    "text": "IP",
+    "font-size": 10,
+    "colour": "#EA0036"
+}, {
+    "type": "tags",
+    "values": [ { "x": 0, "y": 18 }, { "x": 3, "y": 50 }, { "x": 5, "y": 14 }, { "x": 8, "y": 6 }, { "x": 9, "y": 51 }, { "x": 10, "y": 64 }, { "x": 11, "y": 49 }, { "x": 15, "y": 11 }, { "x": 18, "y": 4 }, { "x": 19, "y": 7 }, { "x": 20, "y": 13 }, { "x": 21, "y": 25 }, { "x": 23, "y": 40 }, { "x": 25, "y": 29 }, { "x": 26, "y": 9 } ],
+    "font": "Verdana",
+    "font-size": 10,
+    "colour": "#5170D0",
+    "align-x": "center",
+    "text": "#y#"
+} ]
+
+}
